@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CookieForm</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_tel">Telefono</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_des">Descripcion Contacto</string>
+    <string name="btn_sig">Siguiente</string>
+    <string name="btn_canceldp">Cancel</string>
+    <string name="btn_okdp">Ok</string>
+    <string name="setdate">Set date</string>
+    <string name="fechanac">Fecha nacimiento</string>
+    <string name="confirmar">Confirmar datos</string>
+    <string name="nombre_c">Nombre</string>
+    <string name="fechanac_c">Fecha Nacimiento: </string>
+    <string name="tel_c">Tel.: </string>
+    <string name="email_c">Email: </string>
+    <string name="desc_c">Descripcion: </string>
+    <string name="btn_editar">Editar datos</string>
+
+</resources>

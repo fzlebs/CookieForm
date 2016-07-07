@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="16dp"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="16dp"
+tools:context="com.fedez.cookieform.MainActivity">
+
+<LinearLayout
+    android:id="@+id/form01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_nombre"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_setdate"
+            android:layout_alignLeft="@+id/dp_fechanac"
+            android:text="@string/setdate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fechanac"
+            android:layout_alignRight="@+id/dp_fechanac"
+            android:text="@string/fechanac"/>
+
+    <DatePicker
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dp_fechanac"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:foregroundGravity="center"
+        android:onClick="getDate"
+        >
+
+    </DatePicker>
+
+        <Button
+
+            android:id="@+id/btn_canceldp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_canceldp"
+            android:layout_below="@id/dp_fechanac"
+            android:layout_alignLeft="@id/dp_fechanac"
+
+            />
+
+        <Button
+
+            android:id="@+id/btn_okdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_okdp"
+            android:layout_below="@id/dp_fechanac"
+            android:layout_toRightOf="@id/btn_canceldp"
+            android:layout_alignRight="@id/dp_fechanac"
+            />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_tel"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_des"
+            android:inputType="text"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/btn_sig"
+    android:text="@string/btn_sig"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:layout_constraintBottom_toBottomOf="@+id/activity_main" />
+
+
+</android.support.constraint.ConstraintLayout>
